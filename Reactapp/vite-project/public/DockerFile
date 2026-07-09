@@ -1,0 +1,5 @@
+FROM node:20
+WORKDIR /React project
+COPY . .
+RUN npm install
+CMD [ "npm", "run", "dev", "--", "--host" ]
